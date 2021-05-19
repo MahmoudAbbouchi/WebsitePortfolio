@@ -1,6 +1,6 @@
 # Created by Mahmoud Abbouchi
 # Testing out flask for website framework development
-from flask import Flask
+from flask import Flask, render_template
 
 # Create an instance of the Flask class that is the WSGI application.
 # The first argument is the name of the application module or package,
@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/')
 def mainpage():
     #This is the index page
-    return "Welcome"
+    return render_template('mainpage.html')
 
 @app.route('/hello')
 def hello():
