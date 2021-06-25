@@ -4,10 +4,47 @@
 <head>
     <meta charset="utf-8" />
     <title>This is the title page.</title>
+    <style>
+        h2 {
+            text-align: center;
+            color: rebeccapurple;
+        }
+
+        h6 {
+            text-decoration: dotted;
+            text-align: left;
+        }
+
+        ng-form {
+            text-decoration: dotted;
+            text-align: left;
+        }
+        h1 {
+            text-align: center;
+            text-decoration: dotted;
+            text-decoration-color: mediumturquoise;
+        }
+    </style>
 </head>
-<body>
-    <h1>This is the title page.</h1>
+<body style="background-color:aliceblue">
+    <h1 style="color:rebeccapurple; font-family:'Blackadder ITC'; font:600">This is the title page.</h1>
+    <h3 style="background-color:lawngreen; text-align:center">
+    <button type="button" onclick="alert('Redirecting')" style="background-color:aquamarine;">
+        <h5 style="color:peru; text-decoration:wavy underline; text-align:center">
+            Click Me!
+        </h5>
+    </button>
+    </h3>
+    <form action="/hello" method="post">
+        <input type="text" name="name" value="Name" />
+        <label for="name"> Your Name!</label><br />
+        <input type="submit" value="Submit" />
+    </form>
+    <h6>
+        <a href="/hello"> Redirecting to the hello page</a>
+    </h6>
 </body>
+</html>
 <footer>
     <p style="text-align:left;">
         Created by Mahmoud Abbouchi
@@ -15,4 +52,3 @@
             Reach me at mahmoud.abbouchi13@gmail.com
         </span>
 </footer>
-</html>
